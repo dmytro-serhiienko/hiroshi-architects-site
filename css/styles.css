@@ -267,13 +267,18 @@ button {
 }
 
 /* !=============BLOG=============== */
+
+.blog {
+  background: #ece8e5;
+}
+
 .blog > .container {
   padding-left: 90px;
   padding-right: 90px;
   padding-bottom: 50px;
   padding-top: 50px;
   margin-bottom: 50px;
-  background: #ece8e5;
+  margin: 0 auto;
 }
 .blog-list {
   display: flex;
@@ -303,12 +308,17 @@ button {
 
 /* !=============FOOTER=============== */
 
+.footer {
+  padding-top: 50px;
+}
+
 .footer > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
   position: relative;
+  margin: 0 auto;
 }
 .footer-top {
 }
