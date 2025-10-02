@@ -21,28 +21,20 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- animations -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header-top">
-          <a class="logo animate__animated animate__backInLeft" href=""
-            ><span>Hiroshi</span>Architects</a
-          >
+          <a class="logo" href=""><span>Hiroshi</span>Architects</a>
           <nav class="main-nav">
-            <ul class="main-nav__list animate__animated animate__backInRight">
+            <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="">Home</a>
+                <a class="main-nav__link" href="#header">Home</a>
               </li>
 
               <li class="main-nav__item">
@@ -50,7 +42,7 @@
               </li>
 
               <li class="main-nav__item">
-                <a class="main-nav__link" href="">Portfolio</a>
+                <a class="main-nav__link" href="#portfolio">Portfolio</a>
               </li>
 
               <li class="main-nav__item">
@@ -135,7 +127,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog" id="portfolio">
         <div class="container">
           <ul class="blog-list">
             <li class="blog-list__item">
@@ -189,7 +181,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <a class="logo-footer" href=""><span>Hiroshi</span>Architects</a>
+          <a class="logo-footer" href="#header"
+            ><span>Hiroshi</span>Architects</a
+          >
         </div>
         <p class="footer-text">
           &#xa9; 2024 Hiroshi Architects. All rights reserved. Privacy Policy
@@ -197,11 +191,29 @@
         </p>
         <div class="footer-bottom">
           <p class="footer-contact">Contact</p>
-          <a class="footer-email" href="mailto:hiroschi@gmail.com"
-            >hiroschi@gmail.com</a
-          >
 
-          <a class="footer-phone" href="tel:+1234567890">+1 (234) 567-890</a>
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a
+                class="footer-social__link"
+                href="mailto:info@hiroshi-architects.com"
+              >
+                <svg class="footer-social__icon" width="24" height="24">
+                  <use href="./icons/mail.svg"></use>
+                </svg>
+                Email us</a
+              >
+            </li>
+
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="tel:+1234567890">
+                <svg class="footer-social__icon" width="24" height="24">
+                  <use href="./icons/phone.svg"></use>
+                </svg>
+                Call us</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
